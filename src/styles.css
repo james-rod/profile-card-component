@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.patternBottom {
+  position: absolute;
+  bottom: -525px;
+  right: -250px;
+}
+
+.patternTop {
+  position: absolute;
+  top: -523px;
+  left: -270px;
+}
+
+.outer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  gap: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.posterImg {
+  border-radius: 10px 10px 0 0;
+}
+
+.profile-container {
+  position: absolute;
+  top: 80px;
+  left: 125px;
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 50%;
+}
+
+.profileImg {
+  border-radius: 50%;
+  border-color: #fff;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.name-text {
+  color: hsl(229, 23%, 23%);
+}
+
+.bottom-container,
+p {
+  color: hsl(227, 10%, 46%);
+}
+
+span {
+  color: hsl(227, 10%, 46%);
+}
+
+hr {
+  height: 0.3px;
+  width: 100%;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding: 20px;
+}
+
+.social-followers,
+.social-likes,
+.social-photos {
+  color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width: 600px) {
+  .patternBottom {
+    position: absolute;
+    bottom: -525px;
+    right: -720px;
+  }
+  .patternTop {
+    position: absolute;
+    top: -520px;
+    left: -720px;
+  }
+}
